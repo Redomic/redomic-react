@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Background.css";
 import NET from "vanta/dist/vanta.net.min";
+
+import "./Background.css";
 
 const Background = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0);
