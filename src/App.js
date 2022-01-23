@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar.js";
 
 import Home from "./components/Home.js";
 import About from "./components/About.js";
+import Projects from "./components/Projects.js";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

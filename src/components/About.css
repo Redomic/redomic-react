@@ -55,13 +55,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 14.5rem;
+  height: 14.5 rem;
   width: 12rem;
   background-color: #212121;
   border: 0.2rem solid var(--accentRedColor);
   border-radius: 2rem;
   padding-top: 1rem;
   margin: 1rem;
+  text-decoration: none;
 }
 
 .about-icon img {

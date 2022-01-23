@@ -40,25 +40,45 @@ const About = () => {
         <h2 className="about-checkmeout">Check me out on:</h2>
 
         <div className="about-icons-holder">
-          <div className="about-icon">
+          <a
+            className="about-icon"
+            href="https://github.com/Redomic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={github} alt="github" />
             <h3>GITHUB</h3>
-          </div>
+          </a>
 
-          <div className="about-icon">
+          <a
+            className="about-icon"
+            href="https://github.com/Redomichttps://www.linkedin.com/in/jones-david-6b98381ba/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkedin} alt="linkedin" />
             <h3>LINKEDIN</h3>
-          </div>
+          </a>
 
-          <div className="about-icon">
+          <a
+            className="about-icon"
+            href="https://www.twitch.tv/redomic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitch} alt="twitch" />
             <h3>TWITCH</h3>
-          </div>
+          </a>
 
-          <div className="about-icon">
+          <a
+            className="about-icon"
+            href="https://www.instagram.com/jones_xdd/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instagram} alt="instagram" />
             <h3>INSTAGRAM</h3>
-          </div>
+          </a>
         </div>
       </div>
     </div>
