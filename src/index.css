@@ -6,6 +6,7 @@
   --navbarBorderColor: rgb(97, 23, 23);
   --backgroundColor: rgb(20, 20, 20);
   --accentRedColor: rgb(188, 32, 32);
+  overflow: hidden;
 }
 
 html {
