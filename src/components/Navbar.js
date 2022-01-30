@@ -17,7 +17,7 @@ const Navbar = () => {
     } else if (window.location.pathname === "/projects") {
       setPage(2);
     }
-  });
+  }, []);
 
   return (
     <div id="navbar-container">
