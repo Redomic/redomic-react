@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,16 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [page, setPage] = useState(0);
+
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      setPage(0);
+    } else if (window.location.pathname === "/about") {
+      setPage(1);
+    } else if (window.location.pathname === "/projects") {
+      setPage(2);
+    }
+  });
 
   return (
     <div id="navbar-container">

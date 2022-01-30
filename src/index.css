@@ -17,3 +17,18 @@ body {
   background-color: var(--backgroundColor);
   font-family: "Montserrat", serif;
 }
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(44, 44, 44, 0.7);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(44, 44, 44);
+}

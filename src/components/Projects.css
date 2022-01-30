@@ -2,31 +2,98 @@
   height: 100vh;
   width: 100vw;
   color: white;
-  overflow: hideen;
   overflow-x: hidden;
   overflow-y: scroll;
   flex-direction: column;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .projects-holder {
-  padding: 0px;
+  flex-shrink: 0;
+  margin: 1.25rem;
+  padding: 2.5rem;
+  border-radius: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   outline: 2px solid rgba(255, 255, 255, 0.1);
   outline-offset: -2px;
   backdrop-filter: blur(5px);
   background: transparent;
   overflow: hidden;
-  width: 88rem;
-  height: 100rem;
+  width: 80rem;
 }
 
 .projects-icon {
   aspect-ratio: auto;
-  height: 10rem;
+  height: 25rem;
+  margin-right: 3.5rem;
+  border-radius: 2rem;
+}
+
+.projects-information-holder {
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-name {
+  font-size: 3.8rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.projects-desc {
+  margin-top: 0.8rem;
+  font-size: 1.9rem;
+}
+
+.projects-link-holder {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.projects-link {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: var(--accentRedColor);
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border-radius: 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.projects-link:hover {
+  box-shadow: 0 0 2rem 0 var(--accentRedColor);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.projects-status-ongoing {
+  background-color: transparent;
+  outline: tomato solid 0.5rem;
+  color: tomato;
+  font-weight: 800;
+  border-radius: 10rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  position: absolute;
+  left: 83%;
+  top: 76%;
+}
+
+.projects-status-completed {
+  background-color: transparent;
+  outline: #4cb050 solid 0.5rem;
+  color: #4cb050;
+  font-weight: 800;
+  border-radius: 10rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  position: absolute;
+  left: 80%;
+  top: 76%;
 }
