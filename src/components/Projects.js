@@ -10,8 +10,8 @@ const Projects = () => {
   const projects = [
     {
       icon: portfolio,
-      name: "Portfolio",
-      desc: "This portfolio was made with React, will be expanding for more features and projects soon.",
+      name: "Redomic",
+      desc: "This site was made with React. Will be expanded for more features and projects soon.",
       link: "https://github.com/Redomic/redomic-portfolio-react",
       link_name: "Github Repo",
       ongoing: false,
@@ -19,7 +19,7 @@ const Projects = () => {
     {
       icon: locaro,
       name: "Locaro",
-      desc: "Early-stage startup that allows you to buy from shops and stores near you and enables businesses to sell and delivery their products online in a seamless way.",
+      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
       link: "https://www.locaro.in",
       link_name: "Website",
       ongoing: true,
