@@ -52,7 +52,7 @@ const About = () => {
 
           <a
             className="about-icon"
-            href="https://github.com/Redomichttps://www.linkedin.com/in/jones-david-6b98381ba/"
+            href="https://www.linkedin.com/in/jones-david-6b98381ba/"
             target="_blank"
             rel="noreferrer"
           >
