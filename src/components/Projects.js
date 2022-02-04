@@ -24,22 +24,6 @@ const Projects = () => {
       link_name: "Website",
       ongoing: true,
     },
-    {
-      icon: locaro,
-      name: "Locaro",
-      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
-      link: "https://www.locaro.in",
-      link_name: "Website",
-      ongoing: true,
-    },
-    {
-      icon: locaro,
-      name: "Locaro",
-      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
-      link: "https://www.locaro.in",
-      link_name: "Website",
-      ongoing: true,
-    },
   ];
   return (
     <div
