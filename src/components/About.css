@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   color: white;
+  overflow: hidden;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@
   backdrop-filter: blur(5px);
   background: transparent;
   overflow: hidden;
-  margin-left: 1.4rem;
+  /* margin-left: 1.4rem; */
   border-radius: 3rem;
   width: 88rem;
   height: 50rem;
@@ -95,4 +96,16 @@
 .python {
   font-weight: 700;
   color: #ffd43b;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #about-holder {
+    transform: scale(0.4);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #about-holder {
+    transform: scale(0.85);
+  }
 }

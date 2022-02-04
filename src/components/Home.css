@@ -1,5 +1,6 @@
 #home-container {
   height: 100vh;
+  overflow: hidden;
   width: 100vw;
   color: white;
   flex-direction: column;
@@ -8,14 +9,21 @@
   align-items: center;
 }
 
-#home-container h1 {
+#home {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
   font-weight: 200;
   font-family: "Titillium Web";
   letter-spacing: 2rem;
   font-size: 6rem;
 }
 
-#home-container h2 {
+#home h2 {
   margin-top: -8rem;
   font-weight: 900;
   letter-spacing: -0.6rem;
@@ -40,7 +48,7 @@
   height: 8rem;
 }
 
-#home-container h1 {
+#home h1 {
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.6) 30%,
@@ -58,5 +66,17 @@
 
   to {
     -webkit-mask-position: -50%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #home {
+    transform: scale(0.45);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #home {
+    transform: scale(0.9);
   }
 }

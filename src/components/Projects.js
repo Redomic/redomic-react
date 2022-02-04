@@ -24,38 +24,59 @@ const Projects = () => {
       link_name: "Website",
       ongoing: true,
     },
+    {
+      icon: locaro,
+      name: "Locaro",
+      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
+      link: "https://www.locaro.in",
+      link_name: "Website",
+      ongoing: true,
+    },
+    {
+      icon: locaro,
+      name: "Locaro",
+      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
+      link: "https://www.locaro.in",
+      link_name: "Website",
+      ongoing: true,
+    },
   ];
   return (
     <div
       id="projects-container"
       style={projects.length <= 2 ? { justifyContent: "center" } : null}
     >
-      {projects.map((e) => {
-        return (
-          <div className="projects-holder">
-            <img className="projects-icon" src={e.icon} alt={e.name} />
-            <div className="projects-information-holder">
-              <h2 className="projects-name">{e.name}</h2>
-              <p className="projects-desc">{e.desc}</p>
-              <div className="projects-link-holder">
-                <a
-                  className="projects-link"
-                  href={e.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {e.link_name}
-                </a>
+      <div
+        id="projects-holder-container"
+        // style={projects.length <= 2 ? { justifyContent: "center" } : null}
+      >
+        {projects.map((e) => {
+          return (
+            <div className="projects-holder">
+              <img className="projects-icon" src={e.icon} alt={e.name} />
+              <div className="projects-information-holder">
+                <h2 className="projects-name">{e.name}</h2>
+                <p className="projects-desc">{e.desc}</p>
+                <div className="projects-link-holder">
+                  <a
+                    className="projects-link"
+                    href={e.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {e.link_name}
+                  </a>
+                </div>
               </div>
+              {e.ongoing ? (
+                <span className="projects-status-ongoing">ONGOING</span>
+              ) : (
+                <span className="projects-status-completed">COMPLETED</span>
+              )}
             </div>
-            {e.ongoing ? (
-              <span className="projects-status-ongoing">ONGOING</span>
-            ) : (
-              <span className="projects-status-completed">COMPLETED</span>
-            )}
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };
