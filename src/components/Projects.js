@@ -1,8 +1,8 @@
 import React from "react";
 
 import portfolio from "./assets/portfolioproject.png";
-import flutter from "./assets/flutterproject.png";
 import locaro from "./assets/locarologo.png";
+import ljap from "./assets/ljap.gif";
 
 import "./Projects.css";
 
@@ -19,10 +19,18 @@ const Projects = () => {
     {
       icon: locaro,
       name: "Locaro",
-      desc: "Early-stage startup that enables shops to deliver and sell online in a seamless way and allows you to buy from shops and stores near you.",
+      desc: "Early-stage startup based in India that allows you to buy from shops and stores near you - Enables small to medium businesses to catalog, manage and deliver their products online.",
       link: "https://www.locaro.in",
       link_name: "Website",
       ongoing: true,
+    },
+    {
+      icon: ljap,
+      name: "Literally Just a Pixel",
+      desc: "A collection of 1000 unique coloured pixel NFTs on the Ethereum blockchain using the ERC-721 standard.",
+      link: "https://www.literallyjustapixel.com",
+      link_name: "Website",
+      ongoing: false,
     },
   ];
   return (
