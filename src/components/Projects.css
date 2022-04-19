@@ -25,6 +25,7 @@
 
 .projects-icon {
   aspect-ratio: auto;
+  display: inline;
   height: 25rem;
   margin-right: 3.5rem;
   border-radius: 2rem;

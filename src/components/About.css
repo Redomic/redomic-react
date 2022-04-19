@@ -39,6 +39,10 @@
   font-weight: 300;
 }
 
+.stack-info {
+  margin-top: 2rem;
+}
+
 .about-checkmeout {
   margin-top: 0.5rem;
   font-size: 3.3rem;

@@ -25,18 +25,18 @@ const About = () => {
     <div id="about-container">
       <div id="about-holder">
         <h1 className="about-title">
-          Hey, I am <span className="accentred">Jones</span>
+          Hello, I'm <span className="accentred">Jones</span>.
         </h1>
 
         <p className="about-information">
           {age === 18 ? "An" : "A"} <span className="accentred">{age}</span>{" "}
-          year-old Developer <br />
-          who uses <span className="nodejs">NodeJS</span>,{" "}
+          year-old developer <br />
+          seeking to make a difference through my work. <br />
+          {/* <span className="nodejs">NodeJS</span>,{" "}
           <span className="flutter">Flutter</span>,{" "}
           <span className="python">Python</span> and{" "}
-          <span className="accentred">Others</span>
+          <span className="accentred">Others</span> */}
         </p>
-
         <h2 className="about-checkmeout">Check me out on:</h2>
 
         <div className="about-icons-holder">
@@ -52,7 +52,7 @@ const About = () => {
 
           <a
             className="about-icon"
-            href="https://www.linkedin.com/in/jones-david-6b98381ba/"
+            href="https://www.linkedin.com/in/redomic/"
             target="_blank"
             rel="noreferrer"
           >
