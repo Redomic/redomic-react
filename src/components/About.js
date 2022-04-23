@@ -25,12 +25,13 @@ const About = () => {
     <div id="about-container">
       <div id="about-holder">
         <h1 className="about-title">
-          Hello, I'm <span className="accentred">Jones</span>.
+          Hey, I'm <span className="accentred">Jones</span>.
         </h1>
 
         <p className="about-information">
           {age === 18 ? "An" : "A"} <span className="accentred">{age}</span>{" "}
-          year-old developer <br />
+          year-old aspiring entrepreneur and student
+          <br />
           seeking to make a difference through my work. <br />
           {/* <span className="nodejs">NodeJS</span>,{" "}
           <span className="flutter">Flutter</span>,{" "}
