@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { SizeContext } from "../Context";
 
 import logo from "./assets/userlogo_lowres.png";
+import home from "./assets/home.png";
+import about from "./assets/about.png";
+import projects from "./assets/projects.png";
 
 import "./Navbar.css";
 
@@ -46,7 +49,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(0)}
               >
-                Home
+                <img src={home} alt="Redomic home" />
               </Link>
               <Link
                 to="/about"
@@ -54,7 +57,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(1)}
               >
-                About
+                <img src={about} alt="Redomic about" />
               </Link>
               <Link
                 to="/projects"
@@ -62,7 +65,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(2)}
               >
-                Projects
+                <img src={projects} alt="Redomic home" />
               </Link>
             </nav>
           </div>
@@ -86,7 +89,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(0)}
               >
-                Home
+                <img src={home} alt="Redomic home" />
               </Link>
               <Link
                 to="/about"
@@ -94,7 +97,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(1)}
               >
-                About
+                <img src={about} alt="Redomic about" />
               </Link>
               <Link
                 to="/projects"
@@ -102,7 +105,7 @@ const Navbar = () => {
                 style={{ textDecoration: "none" }}
                 onClick={() => setPage(2)}
               >
-                Projects
+                <img src={projects} alt="Redomic projects" />
               </Link>
             </nav>
           </div>
