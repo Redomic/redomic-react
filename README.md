@@ -1,5 +1,12 @@
-# Portfolio Source code
-Now in react! :D
+# Redomic - Website Source Code
+
+Hey, I am Jones. Aspiring entrepreneur and student seeking to make a difference through my work.
+
+\- [LinkedIn](https://www.linkedin.com/in/redomic/) - 
+[Instagram](https://www.instagram.com/jones_xdd/) - 
+[Twitch](https://www.twitch.tv/redomic) - 
+
+-- Made in React -- 
 
 [![Portfolio Site](https://i.imgur.com/21Rm9K0.png)](https://www.redomic.in)
 
