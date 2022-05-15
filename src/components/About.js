@@ -30,9 +30,9 @@ const About = () => {
 
         <p className="about-information">
           {age === 18 ? "An" : "A"} <span className="accentred">{age}</span>{" "}
-          year-old aspiring entrepreneur and student
+          year-old aspiring entrepreneur
           <br />
-          seeking to make a difference through my work. <br />
+          hoping to make a difference through my work. <br />
           {/* <span className="nodejs">NodeJS</span>,{" "}
           <span className="flutter">Flutter</span>,{" "}
           <span className="python">Python</span> and{" "}
