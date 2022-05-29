@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { AnimatePresence } from "framer-motion";
 
 import { SizeContext } from "./Context.js";
 
@@ -36,16 +36,14 @@ const App = () => {
       <SizeContext.Provider value={{ size }}>
         <Navbar />
         <Background />
-        {/* <TransitionGroup>
-        <CSSTransition timeout={450} classNames="fade" key={location.key}> */}
-        <Routes location={location}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </AnimatePresence>
       </SizeContext.Provider>
-      {/* </CSSTransition>
-      </TransitionGroup> */}
     </div>
   );
 };

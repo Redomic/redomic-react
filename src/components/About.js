@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
@@ -22,7 +23,13 @@ const About = () => {
   });
 
   return (
-    <div id="about-container">
+    <motion.div
+      id="about-container"
+      initial={{ y: "20vw", opacity: 0 }}
+      animate={{ y: "0vw", opacity: 1, scale: 1 }}
+      exit={{ y: "-20vw", opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+    >
       <div id="about-holder">
         <h1 className="about-title">
           Hey, I'm <span className="accentred">Jones</span>.
@@ -82,7 +89,7 @@ const About = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import portfolio from "./assets/portfolioproject.png";
 import locaro from "./assets/locarologo.png";
@@ -34,9 +35,13 @@ const Projects = () => {
     },
   ];
   return (
-    <div
+    <motion.div
       id="projects-container"
       style={projects.length <= 2 ? { justifyContent: "center" } : null}
+      initial={{ y: "20vw", opacity: 0 }}
+      animate={{ y: "0vw", opacity: 1, scale: 1 }}
+      exit={{ y: "-20vw", opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
       <div
         id="projects-holder-container"
@@ -69,7 +74,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
