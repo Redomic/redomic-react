@@ -20,7 +20,12 @@
   backdrop-filter: blur(5px);
   background: transparent;
   overflow: hidden;
+  transition: 0.3s ease-out;
   width: 80rem;
+}
+
+.projects-holder:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .projects-icon {

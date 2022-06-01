@@ -59,27 +59,96 @@
 .about-icon {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   height: 14.5 rem;
   width: 12rem;
-  background-color: #212121;
-  border: 0.2rem solid var(--accentRedColor);
+  background-color: var(--navbarColor);
+  border: 0.2rem solid #2b2b2b;
   border-radius: 2rem;
   padding-top: 1rem;
   margin: 1rem;
   text-decoration: none;
+  transition: 0.6s;
+  overflow: hidden;
 }
 
-.about-icon img {
+.about-icon:focus {
+  outline: 0;
+}
+
+.about-icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.about-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.about-icon:hover {
+  background: #bc2020;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.about-icon:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s ease-out;
+}
+.about-icon:hover:after {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s ease-out;
+}
+
+.about-icon svg {
+  /* filter: invert(19%) sepia(67%) saturate(2914%) hue-rotate(343deg)
+    brightness(95%) contrast(101%); */
+  color: var(--accentRedColor);
   aspect-ratio: auto;
+  transition: 0.6s;
   height: 10rem;
+}
+
+.about-icon:hover svg {
+  /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(103%)
+    contrast(102%); */
+  color: white;
+  cursor: pointer;
 }
 
 .about-icon h3 {
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 1rem;
+  transition: 0.6s;
   color: var(--accentRedColor);
+}
+
+.about-icon:hover h3 {
+  color: white;
+  cursor: pointer;
 }
 
 .accentred {
