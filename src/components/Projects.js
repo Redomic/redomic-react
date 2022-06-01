@@ -34,6 +34,7 @@ const Projects = () => {
       ongoing: false,
     },
   ];
+
   return (
     <motion.div
       id="projects-container"
