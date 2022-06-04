@@ -35,14 +35,10 @@ const About = () => {
         </h1>
 
         <p className="about-information">
-          {age === 18 ? "An" : "A"} <span className="accentred">{age}</span>{" "}
-          year-old aspiring entrepreneur
+          A <span className="accentred">{age}</span> year-old aspiring
+          entrepreneur
           <br />
           hoping to make a difference through my work. <br />
-          {/* <span className="nodejs">NodeJS</span>,{" "}
-          <span className="flutter">Flutter</span>,{" "}
-          <span className="python">Python</span> and{" "}
-          <span className="accentred">Others</span> */}
         </p>
         <h2 className="about-checkmeout">Check me out on:</h2>
 
