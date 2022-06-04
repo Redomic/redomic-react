@@ -13,7 +13,7 @@
   flex-shrink: 0;
   margin: 2rem;
   padding: 2.5rem;
-  border-radius: 3rem;
+  border-radius: 2rem;
   display: flex;
   outline: 2px solid rgba(255, 255, 255, 0.1);
   outline-offset: -2px;
@@ -25,7 +25,8 @@
 }
 
 .projects-holder:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.05);
 }
 
 .projects-icon {
@@ -33,7 +34,7 @@
   display: inline;
   height: 25rem;
   margin-right: 3.5rem;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
 }
 
 .projects-information-holder {
@@ -83,7 +84,7 @@
   outline: tomato solid 0.5rem;
   color: tomato;
   font-weight: 800;
-  border-radius: 10rem;
+  border-radius: 1rem;
   font-size: 1.8rem;
   padding: 1rem;
   position: absolute;
@@ -96,7 +97,7 @@
   outline: #4cb050 solid 0.5rem;
   color: #4cb050;
   font-weight: 800;
-  border-radius: 10rem;
+  border-radius: 1rem;
   font-size: 1.8rem;
   padding: 1rem;
   position: absolute;

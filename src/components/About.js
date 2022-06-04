@@ -11,16 +11,15 @@ import "./About.css";
 const About = () => {
   const [age, setAge] = useState(0);
 
-  const getAge = (birthDate) => {
-    const newAge = Math.floor(
-      (new Date() - new Date(birthDate).getTime()) / 3.15576e10
-    );
-    setAge(newAge);
-  };
-
   useEffect(() => {
-    getAge("2003-06-06");
-  });
+    const interval = setInterval(() => {
+      let time =
+        (new Date() - new Date("2003-06-06").getTime()) /
+        (1000 * 60 * 60 * 24 * 365.25);
+      setAge(time.toString().substring(0, 5)); //Change to substring(0, 3) if you don't want the decimals
+    }, 50);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <motion.div
