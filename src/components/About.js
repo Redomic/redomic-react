@@ -11,15 +11,16 @@ import "./About.css";
 const About = () => {
   const [age, setAge] = useState(0);
 
+  const getAge = (birthDate) => {
+    const newAge = Math.floor(
+      (new Date() - new Date(birthDate).getTime()) / 3.15576e10
+    );
+    setAge(newAge);
+  };
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      let time =
-        (new Date() - new Date("2003-06-06").getTime()) /
-        (1000 * 60 * 60 * 24 * 365.25);
-      setAge(time.toString().substring(0, 1)); //Change to substring(0, 3) if you don't want the decimals
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
+    getAge("2003-06-06");
+  });
 
   return (
     <motion.div
@@ -35,8 +36,8 @@ const About = () => {
         </h1>
 
         <p className="about-information">
-          A <span className="accentred">{age}</span> year-old aspiring
-          entrepreneur
+          {age === 18 ? "An" : "A"} <span className="accentred">{age}</span>{" "}
+          year-old aspiring entrepreneur
           <br />
           hoping to make a difference through my work. <br />
         </p>
