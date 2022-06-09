@@ -16,7 +16,7 @@ const About = () => {
       let time =
         (new Date() - new Date("2003-06-06").getTime()) /
         (1000 * 60 * 60 * 24 * 365.25);
-      setAge(time.toString().substring(0, 5)); //Change to substring(0, 3) if you don't want the decimals
+      setAge(time.toString().substring(0, 3)); //Change to substring(0, 3) if you don't want the decimals
     }, 50);
     return () => clearInterval(interval);
   }, []);
