@@ -29,6 +29,7 @@
 
 #navbar-mobile {
   padding: 0px;
+  z-index: 1;
   outline: 2px solid rgba(255, 255, 255, 0.1);
   outline-offset: -2px;
   backdrop-filter: blur(5px);
@@ -117,7 +118,7 @@
   display: flex;
   visibility: hidden;
   position: absolute;
-  margin-left: 23rem;
+  margin-left: 23.2rem;
   align-items: center;
   color: transparent;
   text-align: left;
