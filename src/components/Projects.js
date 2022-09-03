@@ -20,7 +20,7 @@ const Projects = () => {
     {
       icon: locaro,
       name: "Locaro",
-      desc: "Early-stage B2B2C Startup based in Mumbai - E-commerce platform that enables businesses to deliver hyperlocally",
+      desc: "Early-stage B2B2C Startup based in Mumbai - Ecommerce platform that enables fast hyperlocal deliveries from shops and stores",
       link: "https://www.locaro.in",
       link_name: "Website",
       ongoing: true,
