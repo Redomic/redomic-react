@@ -9,18 +9,18 @@ import "./Projects.css";
 
 const Projects = () => {
   const projects = [
-    {
-      icon: portfolio,
-      name: "Redomic",
-      desc: "This site was made with React. Will be expanded for more features and projects soon.",
-      link: "https://github.com/Redomic/redomic-portfolio-react",
-      link_name: "Github Repo",
-      ongoing: false,
-    },
+    // {
+    //   icon: portfolio,
+    //   name: "Redomic",
+    //   desc: "This site was made with React. Will be expanded for more features and projects soon.",
+    //   link: "https://github.com/Redomic/redomic-portfolio-react",
+    //   link_name: "Github Repo",
+    //   ongoing: false,
+    // },
     {
       icon: locaro,
       name: "Locaro",
-      desc: "Early-stage startup based in India that allows you to buy from shops and stores near you - Enables small to medium businesses to catalog, manage and deliver their products online.",
+      desc: "Early-stage B2B2C Startup based in Mumbai - E-commerce platform that enables businesses to deliver hyperlocally",
       link: "https://www.locaro.in",
       link_name: "Website",
       ongoing: true,
