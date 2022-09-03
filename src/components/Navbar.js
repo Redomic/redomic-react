@@ -50,6 +50,9 @@ const Navbar = () => {
                 onClick={() => setPage(0)}
               >
                 <img src={home} alt="Redomic home" />
+                <div>
+                  <h2>Home</h2>
+                </div>
               </Link>
               <Link
                 to="/about"
@@ -58,6 +61,9 @@ const Navbar = () => {
                 onClick={() => setPage(1)}
               >
                 <img src={about} alt="Redomic about" />
+                <div>
+                  <h2>About</h2>
+                </div>
               </Link>
               <Link
                 to="/projects"
@@ -66,6 +72,9 @@ const Navbar = () => {
                 onClick={() => setPage(2)}
               >
                 <img src={projects} alt="Redomic home" />
+                <div>
+                  <h2>Projects</h2>
+                </div>
               </Link>
             </nav>
           </div>
