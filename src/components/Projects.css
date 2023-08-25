@@ -17,6 +17,7 @@
   display: flex;
   outline: 2px solid rgba(255, 255, 255, 0.1);
   outline-offset: -2px;
+
   backdrop-filter: blur(5px);
   background: transparent;
   overflow: hidden;
@@ -107,7 +108,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #projects-holder-container {
-    transform: scale(0.4);
+    transform: scale(0.5);
     /* margin-top: -25rem; */
   }
 
@@ -116,9 +117,9 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   #projects-holder-container {
     transform: scale(0.85);
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 }

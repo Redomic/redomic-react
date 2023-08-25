@@ -174,12 +174,12 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #about-holder {
-    transform: scale(0.4);
+    transform: scale(0.5);
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   #about-holder {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 }
