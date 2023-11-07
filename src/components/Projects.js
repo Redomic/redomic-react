@@ -4,25 +4,26 @@ import { motion } from "framer-motion";
 import portfolio from "./assets/portfolioproject.png";
 import locaro from "./assets/locarologo.png";
 import ljap from "./assets/ljap.gif";
+import sentinels from "./assets/sentinels.jpg";
 
 import "./Projects.css";
 
 const Projects = () => {
   const projects = [
-    // {
-    //   icon: portfolio,
-    //   name: "Redomic",
-    //   desc: "This site was made with React. Will be expanded for more features and projects soon.",
-    //   link: "https://github.com/Redomic/redomic-portfolio-react",
-    //   link_name: "Github Repo",
-    //   ongoing: false,
-    // },
     {
       icon: locaro,
       name: "Locaro",
       desc: "Early-stage B2B2C Startup based in Mumbai - Ecommerce platform that enables fast hyperlocal deliveries from shops and stores",
       link: "https://www.locaro.in",
       link_name: "Website",
+      ongoing: true,
+    },
+    {
+      icon: sentinels,
+      name: "Crypto Sentinels",
+      desc: "Monitoring/Tracking layer on top of popular Blockchain Networks for Government Agencies. Built for Smart India Hackathon 2023 (SIH1445).",
+      link: "",
+      link_name: "",
       ongoing: true,
     },
     {
