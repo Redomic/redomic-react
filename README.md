@@ -1,4 +1,4 @@
-# Redomic - Website Source Code
+# Redomic - Source Code
 
 Hey, I am Jones. Aspiring entrepreneur and student seeking to make a difference through my work.
 
