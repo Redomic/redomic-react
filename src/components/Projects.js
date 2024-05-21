@@ -57,14 +57,18 @@ const Projects = () => {
                 <h2 className="projects-name">{e.name}</h2>
                 <p className="projects-desc">{e.desc}</p>
                 <div className="projects-link-holder">
-                  <a
-                    className="projects-link"
-                    href={e.link}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {e.link_name}
-                  </a>
+                  {e.link_name === "" ? (
+                    <></>
+                  ) : (
+                    <a
+                      className="projects-link"
+                      href={e.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {e.link_name}
+                    </a>
+                  )}
                 </div>
               </div>
               {e.ongoing ? (
