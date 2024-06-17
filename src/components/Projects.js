@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Hover from "react-3d-hover";
 
 import portfolio from "./assets/portfolioproject.png";
 import locaro from "./assets/locarologo.png";
@@ -51,32 +52,34 @@ const Projects = () => {
       >
         {projects.map((e) => {
           return (
-            <div className="projects-holder">
-              <img className="projects-icon" src={e.icon} alt={e.name} />
-              <div className="projects-information-holder">
-                <h2 className="projects-name">{e.name}</h2>
-                <p className="projects-desc">{e.desc}</p>
-                <div className="projects-link-holder">
-                  {e.link_name === "" ? (
-                    <></>
-                  ) : (
-                    <a
-                      className="projects-link"
-                      href={e.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {e.link_name}
-                    </a>
-                  )}
+            <Hover>
+              <div className="projects-holder">
+                <img className="projects-icon" src={e.icon} alt={e.name} />
+                <div className="projects-information-holder">
+                  <h2 className="projects-name">{e.name}</h2>
+                  <p className="projects-desc">{e.desc}</p>
+                  <div className="projects-link-holder">
+                    {e.link_name === "" ? (
+                      <></>
+                    ) : (
+                      <a
+                        className="projects-link"
+                        href={e.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {e.link_name}
+                      </a>
+                    )}
+                  </div>
                 </div>
+                {e.ongoing ? (
+                  <span className="projects-status-ongoing">ONGOING</span>
+                ) : (
+                  <span className="projects-status-completed">COMPLETED</span>
+                )}
               </div>
-              {e.ongoing ? (
-                <span className="projects-status-ongoing">ONGOING</span>
-              ) : (
-                <span className="projects-status-completed">COMPLETED</span>
-              )}
-            </div>
+            </Hover>
           );
         })}
       </div>
