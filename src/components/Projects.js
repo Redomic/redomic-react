@@ -23,9 +23,9 @@ const Projects = () => {
       icon: sentinels,
       name: "Crypto Sentinels",
       desc: "Monitoring/Tracking layer on top of popular Blockchain Networks for Government Agencies. Built for Smart India Hackathon 2023 (SIH1445).",
-      link: "",
-      link_name: "",
-      ongoing: true,
+      link: "https://sentinel.redomic.in",
+      link_name: "Web Application",
+      ongoing: false,
     },
     {
       icon: ljap,
