@@ -37,7 +37,7 @@ const App = () => {
       <SizeContext.Provider value={{ size }}>
         <Navbar />
         <Background />
-        <AnimatedCursor />
+        {size.x > 1024 ? <AnimatedCursor /> : <></>}
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
