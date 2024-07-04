@@ -12,6 +12,7 @@ import About from "./components/About.js";
 import Projects from "./components/Projects.js";
 
 import "./App.css";
+import { AnimatedCursor } from "./components/AnimatedCursor.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -36,6 +37,7 @@ const App = () => {
       <SizeContext.Provider value={{ size }}>
         <Navbar />
         <Background />
+        <AnimatedCursor />
         <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
